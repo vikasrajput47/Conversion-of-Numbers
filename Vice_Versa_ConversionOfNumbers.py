@@ -1,10 +1,13 @@
+### This is the program of conversion
 def Input(list):#for converting other to decimal form
+    
     list=[]
     n=int(input("Enter the number of digits:\n"))
     for i in range(n):
         v=str(input("Enter the digits:\n"))
         list.append(v)#Using append for taking input for the list
     print(list)
+    
     conv=[]#declaring new list so that reversed list can be stored here
     for j in reversed(list):#operation of conversion takes place from right to left 
         conv.append(j)#reversing list and storing it in new list in reverse order
@@ -14,6 +17,9 @@ def Input(list):#for converting other to decimal form
     for i in range(len(conv)):
         converted+=int(conv[i])*pow(num,i)#for variable powers of the base and adding it
     return converted
+
+
+
 def Decimal_Other(list):#converting decimal to other
     list=[]
     number=int(input('Enter the decimal number'))
