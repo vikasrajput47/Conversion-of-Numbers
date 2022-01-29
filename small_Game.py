@@ -37,7 +37,7 @@ while True:
         else:
             print("Draw\n")
     else:
-        print(f'wrong in input\n')
+        print(f'wrong input\n')
     attempt+=1
     if(attempt>=5):
         if(win>=3):
